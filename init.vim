@@ -1,0 +1,47 @@
+" set number
+set relativenumber
+set nocompatible
+set encoding=utf-8
+set tabstop=2
+set expandtab 
+set shiftwidth=2 
+set softtabstop=2 
+set smartindent 
+set autoindent
+set noerrorbells
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set cursorline
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
+
+source $HOME/.config/nvim/plugins.vim
+
+syntax on
+filetype plugin indent on
+" colorscheme nord
+
+source $HOME/.config/nvim/colorscheme.vim
+source $HOME/.config/nvim/lsp.vim
+source $HOME/.config/nvim/completion.vim
+      
+set signcolumn=yes
+
+" Set updatetime for CursorHold
+" 300ms of no cursor movement to trigger CursorHold
+set updatetime=300
+" Show diagnostic popup on cursor hover
+autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
+
+" Enable type inlay hints
+autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *
+\ lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment" }
+
+let g:dart_format_on_save = 1
+
+source $HOME/.config/nvim/snippets.vim
+source $HOME/.config/nvim/statusline.vim
