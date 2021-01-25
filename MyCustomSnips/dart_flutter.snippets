@@ -1,9 +1,29 @@
+# Surround the selected Widget block inside a Container or another Widget as
+# it's child widget.
+# Steps: 
+# 1.  Enter VISUAL mode using the <v> key. In VISUAL mode, select the entire 
+#     that you wish to surround with the new Widget and hit <Tab> key.     
+# 2.  Type 'suwidget' and hit <Tab> key again. The original Widget will now be
+#     surrounded with a 'Container' widget as part of it's 'child' property.
+# 3.  Type to change the Container widget as needed. When done, hit <Ctrl+b> or
+#     the combination set as g:UltiSnipsJumpForwardTrigger to switch to 'child'
+#     property in order to rename it.
 snippet suwidget "Surround With Widget"
-  ${1:Widget}(
+  ${1:Container}(
     ${2:child}:${4:${VISUAL}}
   )${3:,}
 endsnippet
 
+# Surround the selected Widget block inside a Row or another Widget as part of 
+# it's children.
+# Steps: 
+# 1.  Enter VISUAL mode using the <v> key. In VISUAL mode, select the entire 
+#     that you wish to surround with the new Widget and hit <Tab> key.     
+# 2.  Type 'sulist' and hit <Tab> key again. The original Widget will now be
+#     surrounded with a 'Row' widget as part of it's 'children' property.
+# 3.  Change the Row widget to Column or other as necessary. When done, 
+#     hit <Ctrl+b> or the combination set as g:UltiSnipsJumpForwardTrigger to 
+#     switch to 'children' property in order to rename it.
 snippet sulist "Surround in Row/Column/Stack"
   ${1:Row}(
     ${2:children}:[${4:${VISUAL}}],
