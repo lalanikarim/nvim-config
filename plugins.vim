@@ -27,5 +27,7 @@ Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+
+Plug 'StanAngeloff/php.vim'
 call plug#end()
 
