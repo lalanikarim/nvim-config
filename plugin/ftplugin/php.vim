@@ -18,7 +18,7 @@
 "map <F6> <Esc>:EnablePHPFolds<Cr>
 "map <F7> <Esc>:DisablePHPFolds<Cr>
 
-let g:DisableAutoPHPFolding = 1
+"let g:DisableAutoPHPFolding = 1
 
-autocmd BufWinEnter *.php EnableFastPHPFolds
-autocmd BufWinEnter *.php normal zR
+"autocmd BufWinEnter *.php EnableFastPHPFolds
+"autocmd BufWinEnter *.php normal zR
