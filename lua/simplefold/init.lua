@@ -58,7 +58,7 @@ local function FoldDocument()
 
     local col = 0
     while col ~= nil do
-      col = lines[row]:find('{',col+1,true)
+      col = lines[row]:find('[{(%[]',col+1)
       if col ~= nil then
         FoldNext(row,col)
       end
