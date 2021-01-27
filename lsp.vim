@@ -63,9 +63,9 @@ local on_attach = function(client, bufnr)
 
   -- Set autocommands conditional on server_capabilities
   if client.resolved_capabilities.document_highlight then
-    vim.cmd(":hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow")
-    vim.cmd(":hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow")
-    vim.cmd(":hi LspReferenceWrite cterm=bold ctermbg=red guibg=LightYellow")
+    vim.cmd(":hi LspReferenceRead ctermbg=236 guibg=#363a4e cterm=bold gui=bold")
+    vim.cmd(":hi LspReferenceText ctermbg=236 guibg=#363a4e cterm=bold gui=bold")
+    vim.cmd(":hi LspReferenceWrite ctermbg=236 guibg=#363a4e cterm=bold gui=bold")
 
     vim.cmd("augroup lsp_document_highlight")
     vim.cmd("autocmd!")
