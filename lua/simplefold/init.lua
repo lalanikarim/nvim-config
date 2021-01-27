@@ -53,7 +53,6 @@ end
 
 local function FoldDocument() 
   local lines = vim.api.nvim_buf_get_lines(0,0,-1,false)
-  local open_braces = 0
   for row = 1,#lines do  
 
     local col = 0
@@ -64,7 +63,6 @@ local function FoldDocument()
       end
     end
   end 
-  print(open_braces, "matches found")
 end
 SetFoldText()
 
