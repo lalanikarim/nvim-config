@@ -1,7 +1,7 @@
 call plug#begin('$HOME/.local/share/nvim/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
-Plug 'rstacruz/vim-closer'
+" Plug 'rstacruz/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'tjdevries/lsp_extensions.nvim'
 Plug 'dart-lang/dart-vim-plugin'

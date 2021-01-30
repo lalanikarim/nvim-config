@@ -1,4 +1,5 @@
 " set number
+set number 
 set relativenumber
 set nocompatible
 set encoding=utf-8
