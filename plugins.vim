@@ -29,7 +29,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 
 Plug 'StanAngeloff/php.vim'
-
+Plug 'gko/vim-coloresque'
 Plug 'lalanikarim/vim-simplefold'
 call plug#end()
 

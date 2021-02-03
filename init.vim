@@ -29,7 +29,8 @@ filetype plugin indent on
 source $HOME/.config/nvim/colorscheme.vim
 source $HOME/.config/nvim/lsp.vim
 source $HOME/.config/nvim/completion.vim
-      
+source $HOME/.config/nvim/mappings.vim
+
 set signcolumn=yes
 
 " Set updatetime for CursorHold
