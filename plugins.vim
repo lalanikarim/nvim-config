@@ -25,8 +25,13 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+
+" Replacing Fzf with Telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'StanAngeloff/php.vim'
 Plug 'gko/vim-coloresque'
