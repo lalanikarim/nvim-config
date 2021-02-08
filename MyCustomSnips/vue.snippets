@@ -1,15 +1,49 @@
 snippet template "Create Vue Component"
 <template>
-  <$1>
-  </$1>
+  <$1></$1>
 </template>
 <script>
+import { ref, computed } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { useStore } from 'vuex'
 export default {
-  setup(){
-  
+  props:[],
+  emits:[],
+  setup(props, { emit }){
+    const store = useStore()
+    const router = useRouter()
+
+    return {
+
+    }
   }
 }
 </script>
 <style scoped>
 </style>
 endsnippet
+
+snippet asynctry "Async Function"
+async () => {
+  try{
+    let ${1:resolved} = await ${2:promise}
+  }
+  catch(err)
+  {
+    console.error(err);
+  }
+}
+endsnippet
+
+snippet asyncthen "Async Function"
+return ${1:func}
+  .then(${2:resp} => {
+    
+    return Promise.resolve();
+  })
+  .catch(err => {
+    console.error(err);
+    return Promise.reject(err);
+  })
+endsnippet
+
