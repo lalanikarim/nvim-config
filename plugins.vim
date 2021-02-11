@@ -15,7 +15,8 @@ Plug 'mg979/vim-visual-multi'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'mhinz/vim-startify'
+Plug 'mhinz/vim-signify'
 " Track the engine.
 Plug 'SirVer/ultisnips'
 

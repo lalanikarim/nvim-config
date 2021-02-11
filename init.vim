@@ -1,4 +1,8 @@
-" set number
+"      _      _ __             _     
+"     (_)__  (_) /_  ___ _  __(_)_ _ 
+"    / / _ \/ / __/ / _ \ |/ / /  ' \
+"   /_/_//_/_/\__(_)_//_/___/_/_/_/_/
+                                 
 set number 
 set relativenumber
 set nocompatible
@@ -47,3 +51,5 @@ let g:dart_format_on_save = 1
 
 source $HOME/.config/nvim/snippets.vim
 source $HOME/.config/nvim/statusline.vim
+source $HOME/.config/nvim/startify.vim
+source $HOME/.config/nvim/signify.vim
