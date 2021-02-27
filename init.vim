@@ -34,6 +34,7 @@ source $HOME/.config/nvim/colorscheme.vim
 source $HOME/.config/nvim/lsp.vim
 source $HOME/.config/nvim/completion.vim
 source $HOME/.config/nvim/mappings.vim
+source $HOME/.config/nvim/vimwiki.vim
 
 set signcolumn=yes
 

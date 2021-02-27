@@ -90,7 +90,7 @@ end
 
 -- Use a loop to conveniently both setup defined servers 
 -- and map buffer local keybindings when the language server attaches
-local servers = { "pyls", "rust_analyzer", "tsserver","cmake","vimls","clangd","jsonls","intelephense","metals","vuels","html" }
+local servers = { "pyls", "rust_analyzer", "tsserver", "cmake", "vimls", "clangd", "jsonls", "intelephense", "metals", "vuels", "html" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
@@ -161,5 +161,18 @@ require'lspconfig'.sumneko_lua.setup {
   },
   on_attach = on_attach,
 }
+
+local configs = require('lspconfig/configs')
+  configs.phpactor = {
+    default_config = {
+      cmd = { "phpactor","language-server" };
+      filetypes = { "php" };
+      root_dir = nvim_lsp.util.root_pattern("composer.json", ".git");
+      settings = {};
+      on_attach = on_attach;
+    }
+  }
+-- nvim_lsp.phpactor.setup{}
+
 EOF
 

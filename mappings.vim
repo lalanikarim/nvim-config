@@ -2,6 +2,9 @@ imap {  {}<ESC>i
 imap (  ()<ESC>i
 imap [  []<ESC>i
 
+cmap W  w
+cmap Q  q
+
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
