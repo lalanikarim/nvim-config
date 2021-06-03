@@ -90,7 +90,7 @@ end
 
 -- Use a loop to conveniently both setup defined servers 
 -- and map buffer local keybindings when the language server attaches
-local servers = { "pyls", "rust_analyzer", "tsserver", "cmake", "vimls", "clangd", "jsonls", "intelephense", "metals", "vuels", "html" }
+local servers = { "pyls", "rust_analyzer", "tsserver", "cmake", "vimls", "clangd", "jsonls", "intelephense", "metals", "vuels", "html", "graphql", "yamlls" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
@@ -172,7 +172,31 @@ local configs = require('lspconfig/configs')
       on_attach = on_attach;
     }
   }
--- nvim_lsp.phpactor.setup{}
+nvim_lsp.phpactor.setup{}
+
+require'lspconfig'.gopls.setup {
+  cmd = {"gopls", "serve"},
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+    },
+  },
+  on_attach = on_attach;
+}
+
+require'lspconfig'.yamlls.setup {
+  settings = {
+    yaml = {
+      schemas = {
+        kubernetes = "/*",
+      },
+    },
+  },
+  root_dir = nvim_lsp.util.root_pattern("*.yaml"),
+}
 
 EOF
 
