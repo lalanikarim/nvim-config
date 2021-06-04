@@ -10,7 +10,7 @@ npm install -g vscode-html-languageserver-bin
 
 ### phpactor ###
 cd ~
-git clone git@github.com:phpactor/phpactor
+git clone https://github.com/phpactor/phpactor
 cd phpactor
 composer install
 chmod +x bin/phpactor
