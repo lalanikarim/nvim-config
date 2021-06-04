@@ -7,6 +7,7 @@ npm install -g intelephense
 npm install -g vls
 npm install -g yaml-language-server
 npm install -g vscode-html-languageserver-bin
+npm install -g graphql-language-service-cli
 
 ### phpactor ###
 cd ~
