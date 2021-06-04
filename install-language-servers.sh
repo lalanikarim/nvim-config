@@ -17,3 +17,7 @@ composer install
 chmod +x bin/phpactor
 cd ~/.local/bin
 ln -s ~/phpactor/bin/phpactor phpactor
+
+### pip install ###
+pip3 install cmake-language-server
+pip3 install 'python-language-server[all]'
