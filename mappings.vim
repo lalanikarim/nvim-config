@@ -16,3 +16,6 @@ nnoremap <leader>la <cmd>Telescope lsp_code_actions<cr>
 nnoremap <leader>lc <cmd>Telescope lsp_range_code_actions<cr>
 
 nnoremap <leader>vk <cmd>Telescope keymaps<cr>
+
+nnoremap <leader>rn <cmd>Lspsaga rename<cr>
+

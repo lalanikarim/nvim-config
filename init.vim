@@ -20,7 +20,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set cursorline
-
+set nofoldenable
 set colorcolumn=80
 highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
 
@@ -42,11 +42,12 @@ set signcolumn=yes
 " 300ms of no cursor movement to trigger CursorHold
 set updatetime=300
 " Show diagnostic popup on cursor hover
-autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
+" autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
 
 " Enable type inlay hints
 autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *
 \ lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment" }
+
 
 let g:dart_format_on_save = 1
 
@@ -54,3 +55,4 @@ source $HOME/.config/nvim/snippets.vim
 source $HOME/.config/nvim/statusline.vim
 source $HOME/.config/nvim/startify.vim
 source $HOME/.config/nvim/signify.vim
+source $HOME/.config/nvim/treesitter.vim

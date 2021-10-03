@@ -37,6 +37,9 @@ Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'StanAngeloff/php.vim'
 Plug 'gko/vim-coloresque'
-Plug 'lalanikarim/vim-simplefold'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
+Plug 'glepnir/lspsaga.nvim'
+" Plug 'lalanikarim/vim-simplefold'
 call plug#end()
 

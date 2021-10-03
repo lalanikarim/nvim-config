@@ -20,8 +20,8 @@ let g:completion_enable_snippet = 'UltiSnips'
 let g:completion_confirm_key = "\<C-y>"
 
 " Disable auto hover and auto signature on cursor
-let g:completion_enable_auto_hover = 0
-let g:completion_enable_auto_signature = 0
+"let g:completion_enable_auto_hover = 0
+"let g:completion_enable_auto_signature = 0
 
 " possible value: "length", "alphabet", "none"
 let g:completion_sorting = 'alphabet' 
@@ -39,7 +39,11 @@ let g:completion_matching_smart_case = 1
 "    autocmd BufEnter *.c,*.cpp let g:completion_trigger_character = ['.', '::']
 " augroup end
 
+let g:completion_trigger_keyword_length = 3
+
 " trigger completion on delete
 let g:completion_trigger_on_delete = 1
 
 " let g:completion_timer_cycle = 200 "default value is 80
+
+autocmd BufEnter * lua require('completion').on_attach()
