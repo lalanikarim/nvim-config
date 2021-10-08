@@ -22,8 +22,6 @@ set incsearch
 set cursorline
 set nofoldenable
 set colorcolumn=80
-highlight Normal guibg=NONE ctermbg=NONE
-highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
 
 source $HOME/.config/nvim/plugins.vim
 

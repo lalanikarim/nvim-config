@@ -15,3 +15,5 @@ if &runtimepath =~? 'sonokai'
   let g:airline_theme = 'sonokai'
   colorscheme sonokai
 endif
+highlight Normal guibg=NONE ctermbg=NONE
+highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
