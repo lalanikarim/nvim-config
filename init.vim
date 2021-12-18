@@ -7,10 +7,10 @@ set number
 set relativenumber
 set nocompatible
 set encoding=utf-8
-set tabstop=2
+set tabstop=4
 set expandtab 
-set shiftwidth=2 
-set softtabstop=2 
+set shiftwidth=4 
+set softtabstop=4 
 set smartindent 
 set autoindent
 set noerrorbells
@@ -55,3 +55,5 @@ source $HOME/.config/nvim/statusline.vim
 source $HOME/.config/nvim/startify.vim
 source $HOME/.config/nvim/signify.vim
 source $HOME/.config/nvim/treesitter.vim
+
+"luafile $HOME/.config/nvim/lspsaga.lua

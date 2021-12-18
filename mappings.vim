@@ -15,7 +15,12 @@ nnoremap <leader>lw <cmd>Telescope lsp_workspace_symbols<cr>
 nnoremap <leader>la <cmd>Telescope lsp_code_actions<cr>
 nnoremap <leader>lc <cmd>Telescope lsp_range_code_actions<cr>
 
+nnoremap gd <cmd>Lspsaga preview_definition<cr>
+" nnoremap gd <cmd>Telescope lsp_definitions<cr>
+nnoremap gi <cmd>Telescope lsp_implementations<cr>
+
 nnoremap <leader>vk <cmd>Telescope keymaps<cr>
 
 nnoremap <leader>rn <cmd>Lspsaga rename<cr>
-
+nnoremap gh <cmd>Lspsaga lsp_finder<cr>
+nnoremap <silent>L <cmd>Lspsaga hover_doc<cr>

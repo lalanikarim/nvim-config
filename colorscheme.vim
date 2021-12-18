@@ -16,4 +16,5 @@ if &runtimepath =~? 'sonokai'
   colorscheme sonokai
 endif
 highlight Normal guibg=NONE ctermbg=NONE
-highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
+highlight EndOfBuffer guibg=NONE ctermbg=NONE
+highlight ColorColumn ctermbg=236 guibg=#333648
