@@ -204,6 +204,16 @@ require'lspconfig'.yamlls.setup {
     },
   },
   root_dir = nvim_lsp.util.root_pattern("*.yaml"),
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+require'lspconfig'.elixirls.setup {
+  cmd = {
+    vim.fn.expand("$HOME/elixir-ls/language_server.sh"),
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 -- require('lspsaga').init_lsp_saga()

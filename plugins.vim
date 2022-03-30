@@ -41,5 +41,6 @@ Plug 'gko/vim-coloresque'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
 Plug 'glepnir/lspsaga.nvim'
 " Plug 'lalanikarim/vim-simplefold'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 

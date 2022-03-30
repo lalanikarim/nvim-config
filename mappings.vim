@@ -24,3 +24,7 @@ nnoremap <leader>vk <cmd>Telescope keymaps<cr>
 nnoremap <leader>rn <cmd>Lspsaga rename<cr>
 nnoremap gh <cmd>Lspsaga lsp_finder<cr>
 nnoremap <silent>L <cmd>Lspsaga hover_doc<cr>
+
+nnoremap <leader>nn <cmd>NERDTreeToggle<cr>
+nnoremap <leader>nf <cmd>NERDTreeFind<cr>
+nnoremap <leader>nc <cmd>NERDTreeFocus<cr>
