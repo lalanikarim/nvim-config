@@ -210,11 +210,25 @@ require'lspconfig'.yamlls.setup {
 
 require'lspconfig'.elixirls.setup {
   cmd = {
-    vim.fn.expand("$HOME/elixir-ls/language_server.sh"),
+    vim.fn.expand("$HOME/.elixir-ls/language_server.sh"),
   },
   on_attach = on_attach,
   capabilities = capabilities,
+  on_attach = on_attach;
 }
+
+local pid = vim.fn.getpid()
+local omnisharp_bin = vim.fn.expand("$HOME/.omnisharp/run")
+require'lspconfig'.omnisharp.setup {
+  cmd = {
+    omnisharp_bin,
+    "--languageserver",
+    "--hostPID",
+    tostring(pid)
+  };
+  on_attach = on_attach;
+}
+
 
 -- require('lspsaga').init_lsp_saga()
 
