@@ -10,13 +10,27 @@ npm install -g vscode-html-languageserver-bin
 npm install -g graphql-language-service-cli
 
 ### phpactor ###
-cd ~
-git clone https://github.com/phpactor/phpactor
-cd phpactor
-composer install
+
+[[ ! -d $HOME/.phpactor ]] && mkdir $HOME/.phpactor 
+cd $HOME/.phpactor
+if ! -d .git 
+then 
+  git clone https://github.com/phpactor/phpactor .
+else
+  git pull
+fi
+composer update
 chmod +x bin/phpactor
-cd ~/.local/bin
-ln -s ~/phpactor/bin/phpactor phpactor
+[[ -f $HOME/.local/bin/phpactor ]] && rm $HOME/.local/bin/phpactor
+ln -s $HOME/.phpactor/bin/phpactor $HOME/.local/bin/phpactor
+
+### elixir-ls ###
+
+[[ ! -d $HOME/.elixir-ls ]] && mkdir $HOME/.elixir-ls
+cd $HOME/.elixir-ls
+[[ ! -f elixir-ls.zip ]] &&  wget https://github.com/elixir-lsp/elixir-ls/releases/download/v0.9.0/elixir-ls.zip && unzip elixir-ls.zip 
+[[ -f $HOME/.local/bin/elixir-ls ]] && rm $HOME/.local/bin/elixir-ls
+ln -s $HOME/.elixir-ls/language_server.sh $HOME/.local/bin/elixir-ls
 
 ### pip install ###
 pip3 install cmake-language-server

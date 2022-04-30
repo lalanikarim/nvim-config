@@ -49,5 +49,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
 Plug 'glepnir/lspsaga.nvim'
 " Plug 'lalanikarim/vim-simplefold'
 Plug 'elixir-editors/vim-elixir'
+Plug 'puremourning/vimspector'
 call plug#end()
 
