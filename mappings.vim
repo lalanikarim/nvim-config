@@ -13,8 +13,8 @@ nnoremap <leader>fc <cmd>Telescope commands<cr>
 nnoremap <leader>lr <cmd>Telescope lsp_references<cr>
 nnoremap <leader>ld <cmd>Telescope lsp_document_symbols<cr>
 nnoremap <leader>lw <cmd>Telescope lsp_workspace_symbols<cr>
-nnoremap <leader>la <cmd>Telescope lsp_code_actions<cr>
-nnoremap <leader>lc <cmd>Telescope lsp_range_code_actions<cr>
+nnoremap <leader>la <cmd>Lspsaga code_action<cr>
+nnoremap <leader>lc <cmd>Lspsaga range_code_action<cr>
 
 nnoremap gd <cmd>Lspsaga preview_definition<cr>
 " nnoremap gd <cmd>Telescope lsp_definitions<cr>
