@@ -8,7 +8,7 @@ npm install -g vls
 npm install -g yaml-language-server
 npm install -g vscode-html-languageserver-bin
 npm install -g graphql-language-service-cli
-npm install -g elm-test elm-format @elm-tooling/elm-language-server
+npm install -g elm elm-test elm-format @elm-tooling/elm-language-server
 
 ### phpactor ###
 
