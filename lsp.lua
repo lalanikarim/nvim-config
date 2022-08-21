@@ -113,6 +113,7 @@ local servers = {
   "yamlls",
   "phpactor", 
   "intelephense",
+  "elmls",
   }
 for idx, lsp in ipairs(servers) do
 --  print("Processing LSP: " .. lsp)
