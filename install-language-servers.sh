@@ -2,7 +2,7 @@
 npm install -g neovim
 npm install -g typescript typescript-language-server
 npm install -g vim-language-server
-npm install -g vscode-json-languageserver
+npm install -g vscode-langservers-extracted
 npm install -g intelephense
 npm install -g vls
 npm install -g yaml-language-server
